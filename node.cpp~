@@ -1,0 +1,19 @@
+#include<iostream>
+#include<cstring>
+
+class node{
+public:
+  node(int i,node* parent);
+  int getValue();
+  node* getParent();
+  node* getLchild();
+  node* getRchild();
+  void setLchild(node* child);
+  void setRchild(node* child);
+private:
+  int value;
+  node* parent;
+  node* Lchild;
+  node*Rchild;
+
+}
